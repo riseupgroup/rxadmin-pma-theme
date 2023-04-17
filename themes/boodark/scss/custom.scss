@@ -1,0 +1,29 @@
+#li_select_theme {
+    > form {
+        > div.col-12 {
+            > div.input-group {
+                display:none;
+            }
+        }
+    }
+}
+
+#li_change_password {
+    display: none;
+}
+#fieldset_change_password {
+    > table > tbody {
+        display: none;
+    }
+    > div {
+        display: none;
+    }
+}
+
+#fieldset_change_password::after {
+    content: "This database is managed by rxAdmin. Changing passwords can cause your rxAdmin to stop working. To take changes, go to your individual game server configuration!";
+}
+
+#fieldset_change_password_footer {
+    display: none;
+}
